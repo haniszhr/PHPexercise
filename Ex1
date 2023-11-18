@@ -1,0 +1,44 @@
+/*
+1. Write a PHP program to compute the sum of the two given integer values. If the two values are the same, then returns triple their sum.
+Sample Input
+1, 2
+3, 2
+2, 2
+Sample Output:
+3
+5
+12
+*/
+
+<?php
+function sum($x,$y){
+return $x==$y ? ($x+$y)*3 : $x+$y ;
+}
+echo sum(1,2)."\n";
+echo sum(3,2)."\n";
+echo sum(2,2)."\n";
+?>
+
+/*
+2. Write a PHP program to get the absolute difference between n and 51. If n is greater than 51 return triple the absolute difference.
+Sample Input:
+53
+30
+51
+Sample Output:
+6
+21
+0
+*/
+
+<?php
+function absDiff($n){
+if ($n>51){
+return ($n-51)*3;
+}
+return 51-$n;
+}
+echo absDiff(53)."\n";
+echo absDiff(30)."\n";
+echo absDiff(51)."\n";
+?>
